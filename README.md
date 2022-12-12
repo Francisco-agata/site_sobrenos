@@ -1,16 +1,10 @@
-# freelancer_website_youtube
+# Sobre Nós
 
-A new Flutter project.
+Sobre Nós é um instituto que luta contra a pobreza menstrual e leva auxílio a mulheres em situação de extrema pobreza.
 
-## Getting Started
+## Informações técnicas
 
-This project is a starting point for a Flutter application.
+Todo o projeto é desenvolvido em framework flutter. A pedido do Sobre Nós,o projeto é um site web.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A plataforma está responsiva via package: https://pub.dev/packages/responsive_sizer
+O site segue a lógica de animações ensinadas no canal de youtube: https://www.youtube.com/@AmIWorthy

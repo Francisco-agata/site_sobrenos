@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
                     children: [
                       Container(
                         height: 100.5.h,
-                        width: MediaQuery.of(context).size.width * 0.45,
+                        width: Adaptive.w(45),
                         color: Colors.white,
                         child: Stack(
                           children: [
@@ -83,7 +83,7 @@ class _MyAppState extends State<MyApp> {
                               top: 200.0,
                               left: 100.0,
                               child: Container(
-                                width: Adaptive.px(400),
+                                width: Adaptive.w(45),
                                 height: 90.5.h,
                                 // height: 400.0,
                                 // width: 400.0,
@@ -111,7 +111,7 @@ class _MyAppState extends State<MyApp> {
                                       // height: 20.0,
                                     ),
                                     Container(
-                                      width: Adaptive.px(400),
+                                     width: Adaptive.w(45),
                                       child: Text(
                                         'Sobre Nós é uma entidade feminista que luta em defesa da vida das mulheres e pela Dignidade Menstrual. Faça parte!',
                                         style: GoogleFonts.nunito(
@@ -130,7 +130,7 @@ class _MyAppState extends State<MyApp> {
                                         //   width: 230.0,
                                         // ),
                                         SizedBox(
-                                          width: Adaptive.px(20),
+                                          width: Adaptive.w(3),
                                         ),
                                         TextButton(
                                           style: TextButton.styleFrom(
@@ -171,7 +171,7 @@ class _MyAppState extends State<MyApp> {
                       Container(
                        height: 100.5.h,
                         color: Colors.white,
-                        width: MediaQuery.of(context).size.width * 0.55,
+                        width: Adaptive.w(30),
                         child: Stack(
                           clipBehavior: Clip.none,
                           children: [
@@ -344,7 +344,7 @@ class _MyAppState extends State<MyApp> {
                     Positioned(
                       left: -250.0,
                       child: Container(
-                        width: Adaptive.w(50),    // This will take 20% of the screen's width
+                        width: Adaptive.w(50),    // This will take 50% of the screen's width
                         height: 55.5.h,
                         // height: 450.0,
                         // width: 700.0,
@@ -359,7 +359,7 @@ class _MyAppState extends State<MyApp> {
                       top: 20.0,
                       left: pixels >= 500 ? 100.0 : 0.0,
                       child: Container(
-                        width: Adaptive.w(50),    // This will take 20% of the screen's width
+                        width: Adaptive.w(50),    // This will take 50% of the screen's width
                         height: 55.5.h,
                         // height: 400.0,
                         // width: 700.0,
@@ -391,7 +391,7 @@ class _MyAppState extends State<MyApp> {
                     AnimatedPositioned(
                       duration: Duration(milliseconds: 500),
                       right: pixels >= 600 ? 100.0 : 0.0,
-                      top: 150.0,
+                      top: 60.0,
                       child: AnimatedOpacity(
                         duration: Duration(milliseconds: 500),
                         opacity: pixels >= 600 ? 1.0 : 0.0,
@@ -413,7 +413,7 @@ class _MyAppState extends State<MyApp> {
                               child: Text(
                                 'é uma entidade feminista que luta em defesa do Brasil, da vida das mulheres e da Dignidade Menstrual. Iniciamos em 2021 em Porto Alegre/RS e atualmente estamos presente em cinco estados e no Distrito Federal. Através de ações de solidariedade garantimos dignidade menstrual para milhares de pessoas que menstruam. Lutamos também por Políticas Públicas eficientes que garantam vida digna para todas brasileiras. Faça parte dessa história, se torne uma Voluntária!',
                                 style: GoogleFonts.nunito(
-                                  fontWeight: FontWeight.w400,
+                                  fontWeight: FontWeight.bold,
                                   color: Colors.purple,
                                   fontSize: 14.0,
                                 ),

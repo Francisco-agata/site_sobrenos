@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import "package:hovering/hovering.dart";
+// import "package:hovering/hovering.dart";
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class Header extends StatefulWidget {
@@ -26,63 +26,63 @@ class _HeaderState extends State<Header> {
           SizedBox(
              width: Adaptive.w(10),
           ),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-            HoverButton(
-            hoverElevation: 0,
-            elevation: 0,
-            onpressed: () {},
-            color: Colors.transparent,
-            hoverColor: Colors.transparent,
-            hoverTextColor: Colors.purple,
-            textColor: Colors.white,
-            child: const Text(
-              'Conheça',
-              style: TextStyle(
-                fontSize: 23,
-              ),
-            ),
-          ),
-              SizedBox(
-                width: 40.0,
-              ),
-             HoverButton(
-            hoverElevation: 0,
-            elevation: 0,
-            onpressed: () {},
-            color: Colors.transparent,
-            hoverColor: Colors.transparent,
-            hoverTextColor: Colors.purple,
-            textColor: Colors.white,
-            child: const Text(
-              'Participe',
-              style: TextStyle(
-                fontSize: 23,
-              ),
-            ),
-          ),
-              SizedBox(
-                width: Adaptive.w(5), 
-              ),
-              HoverButton(
-            hoverElevation: 0,
-            elevation: 0,
-            onpressed: () {},
-            color: Colors.transparent,
-            hoverColor: Colors.transparent,
-            hoverTextColor: Colors.purple,
-            textColor: Colors.white,
-            child: const Text(
-              'Artigos',
-              style: TextStyle(
-                fontSize: 23,
-              ),
-            ),
-          ),
-            ],
-          ),
+          // Row(
+          //   crossAxisAlignment: CrossAxisAlignment.center,
+          //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //   children: [
+          // //   HoverButton(
+          // //   hoverElevation: 0,
+          // //   elevation: 0,
+          // //   onpressed: () {},
+          // //   color: Colors.transparent,
+          // //   hoverColor: Colors.transparent,
+          // //   hoverTextColor: Colors.purple,
+          // //   textColor: Colors.white,
+          // // //   child: const Text(
+          // // //     'Conheça',
+          // // //     style: TextStyle(
+          // // //       fontSize: 23,
+          // // //     ),
+          // // //   ),
+          // // // ),
+          // // //     SizedBox(
+          // // //       width: 40.0,
+          // // //     ),
+          // // //    HoverButton(
+          // // //   hoverElevation: 0,
+          // // //   elevation: 0,
+          // // //   onpressed: () {},
+          // // //   color: Colors.transparent,
+          // // //   hoverColor: Colors.transparent,
+          // // //   hoverTextColor: Colors.purple,
+          // // //   textColor: Colors.white,
+          // // //   child: const Text(
+          // // //     'Participe',
+          // // //     style: TextStyle(
+          // // //       fontSize: 23,
+          // // //     ),
+          // // //   ),
+          // // // ),
+          // // //     SizedBox(
+          // // //       width: Adaptive.w(5), 
+          // // //     ),
+          // // //     HoverButton(
+          // // //   hoverElevation: 0,
+          // // //   elevation: 0,
+          // // //   onpressed: () {},
+          // // //   color: Colors.transparent,
+          // // //   hoverColor: Colors.transparent,
+          // // //   hoverTextColor: Colors.purple,
+          // // //   textColor: Colors.white,
+          // // //   child: const Text(
+          // // //     'Artigos',
+          // // //     style: TextStyle(
+          // // //       fontSize: 23,
+          // // //     ),
+          // // //   ),
+          // // ),
+          //   ],
+          // ),
           SizedBox(
             width: Adaptive.w(5),
           ),

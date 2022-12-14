@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "sobrenos-4a0ef"
-  }
+    "default": "sobrenos-4a0ef",
+    "main": "sobrenos-93aa2"
+  },
+  "targets": {},
+  "etags": {}
 }

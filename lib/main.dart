@@ -8,8 +8,6 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 import 'src/Footer.dart';
 import 'src/Header.dart';
 import 'src/InfoPalette.dart';
-import 'src/ProfileImage.dart';
-import 'src/ProfileTile.dart';
 
 void main() {
   runApp(
@@ -47,6 +45,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        color: Colors.pink[50],
         height: MediaQuery.of(context).size.height,
         width: double.infinity,
         child: SingleChildScrollView(
@@ -56,12 +55,12 @@ class _MyAppState extends State<MyApp> {
               Stack(
                 children: [
                   LayoutBuilder(
-                    builder: (context, constraints) =>  Row(
+                    builder: (context, constraints) => Row(
                       children: [
                         Container(
                           height: 100.5.h,
                           width: constraints.maxWidth * 0.5,
-                          color: Colors.white,
+                          color: Colors.pink[50],
                           child: Stack(
                             children: [
                               Transform(
@@ -88,7 +87,8 @@ class _MyAppState extends State<MyApp> {
                                   // width: 400.0,
                                   child: LayoutBuilder(
                                     builder: (context, constraints) => Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Container(
                                           child: Text(
@@ -107,11 +107,11 @@ class _MyAppState extends State<MyApp> {
                                           ),
                                         ),
                                         SizedBox(
-                                    height: 5.5.h,
+                                          height: 5.5.h,
                                           // height: 20.0,
                                         ),
                                         Container(
-                                         width: constraints.maxWidth * 0.5,
+                                          width: constraints.maxWidth * 0.5,
                                           child: Text(
                                             'Sobre Nós é uma entidade feminista que luta em defesa da vida das mulheres e pela Dignidade Menstrual. Faça parte!',
                                             style: GoogleFonts.nunito(
@@ -121,7 +121,7 @@ class _MyAppState extends State<MyApp> {
                                           ),
                                         ),
                                         SizedBox(
-                                           height: 5.5.h,
+                                          height: 5.5.h,
                                         ),
                                         Row(
                                           children: [
@@ -137,7 +137,8 @@ class _MyAppState extends State<MyApp> {
                                                 backgroundColor: Colors.cyan,
                                                 shape: RoundedRectangleBorder(
                                                   borderRadius:
-                                                      BorderRadius.circular(20.0),
+                                                      BorderRadius.circular(
+                                                          20.0),
                                                 ),
                                               ),
                                               onPressed: () => {
@@ -146,8 +147,9 @@ class _MyAppState extends State<MyApp> {
                                                 ])
                                               },
                                               child: Container(
-                                              height: 10.5.h,
-                                               width: constraints.maxWidth * 0.3,
+                                                height: 10.5.h,
+                                                width:
+                                                    constraints.maxWidth * 0.3,
                                                 child: Center(
                                                   child: Text(
                                                     'Vem com a gente! ♀️',
@@ -170,68 +172,13 @@ class _MyAppState extends State<MyApp> {
                           ),
                         ),
                         Container(
-                         height: 100.5.h,
-                          color: Colors.white,
-                          width: constraints.maxWidth * 0.2,
-                          child: Stack(
-                            clipBehavior: Clip.none,
-                            children: [
-                              ProfileImage(
-                                top: 140.0,
-                                left: 90.0,
-                                diameter: 200.0,
-                                image:
-                                    'lib/assets/images/profileImageAbsorvente.jpeg',
-                              ),
-                              ProfileImage(
-                                top: 160.0,
-                                left: 310.0,
-                                diameter: 100.0,
-                                image: 'lib/assets/images/profileImageStand.jpeg',
-                              ),
-                              ProfileImage(
-                                top: 275.0,
-                                left: 280.0,
-                                diameter: 280.0,
-                                image:
-                                    'lib/assets/images/profileImageCrianca.jpeg',
-                              ),
-                              ProfileImage(
-                                top: 360.0,
-                                left: 90.0,
-                                diameter: 170.0,
-                                image:
-                                    'lib/assets/images/profileImageSorriso.jpeg',
-                              ),
-                              ProfileTile(
-                                top: 350.0,
-                                left: 50.0,
-                                title: 'Um projeto feito de mulheres',
-                                subTitle: 'e para mulheres',
-                                factor: 1.1,
-                              ),
-                              ProfileTile(
-                                top: 140.0,
-                                left: -10.0,
-                                title: '+3.000 absorventes doados!',
-                                subTitle: '+300 mulheres atendidas mensalmente',
-                                factor: 1.1,
-                              ),
-                              ProfileTile(
-                                top: 150.0,
-                                left: 380.0,
-                                title: 'Se identifica como mulher?',
-                                subTitle: 'Vem fazer parte.',
-                                factor: 1.1,
-                              ),
-                              ProfileTile(
-                                top: 285.0,
-                                left: 440.0,
-                                title: 'A luta das mulheres muda o mundo!',
-                                subTitle: 'Você não está sozinha.',
-                                factor: 1.1,
-                              ),
-                            ],
+                          padding: EdgeInsets.only(right: 200),
+                          height: 100.5.h,
+                          color: Colors.pink[50],
+                          width: constraints.maxWidth * 0.5,
+                          child: Image.asset(
+                            'lib/assets/images/landingbackground.png',
+                            fit: BoxFit.contain,
                           ),
                         ),
                       ],
@@ -249,8 +196,8 @@ class _MyAppState extends State<MyApp> {
                     Positioned(
                       right: -200.0,
                       child: Container(
-                         width: Adaptive.w(20),
-                         height: 30.5.h,
+                        width: Adaptive.w(20),
+                        height: 30.5.h,
                         // height: 330.0,
                         // width: 430.0,
                         decoration: BoxDecoration(
@@ -261,6 +208,9 @@ class _MyAppState extends State<MyApp> {
                     ),
                     Column(
                       children: [
+                        SizedBox(
+                          height: 5.5.h,
+                        ),
                         Text(
                           'Contribua',
                           style: GoogleFonts.nunito(
@@ -269,7 +219,7 @@ class _MyAppState extends State<MyApp> {
                           ),
                         ),
                         SizedBox(
-                         height: 5.5.h,
+                          height: 5.5.h,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -337,7 +287,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               LayoutBuilder(
-                  builder: (context, constraints) => Container(
+                builder: (context, constraints) => Container(
                   height: 90.5.h,
                   width: MediaQuery.of(context).size.width,
                   color: Colors.white,
@@ -347,7 +297,8 @@ class _MyAppState extends State<MyApp> {
                       Positioned(
                         left: -250.0,
                         child: Container(
-                          width: Adaptive.w(50),    // This will take 50% of the screen's width
+                          width: Adaptive.w(
+                              50), // This will take 50% of the screen's width
                           height: 55.5.h,
                           // height: 450.0,
                           // width: 700.0,
@@ -362,7 +313,8 @@ class _MyAppState extends State<MyApp> {
                         top: 20.0,
                         left: pixels >= 500 ? 100.0 : 0.0,
                         child: Container(
-                          width: constraints.maxWidth * 0.5,   // This will take 50% of the screen's width
+                          width: constraints.maxWidth *
+                              0.5, // This will take 50% of the screen's width
                           height: 55.5.h,
                           // height: 400.0,
                           // width: 700.0,
@@ -394,11 +346,11 @@ class _MyAppState extends State<MyApp> {
                                     fontSize: 16.sp,
                                     color: Colors.purple),
                               ),
-                              SizedBox(  
-                          height: 5.5.h,
+                              SizedBox(
+                                height: 5.5.h,
                               ),
                               Container(
-                                 width: constraints.maxWidth * 0.3,
+                                width: constraints.maxWidth * 0.3,
                                 child: Text(
                                   'é uma entidade feminista que luta em defesa do Brasil, da vida das mulheres e da Dignidade Menstrual. Iniciamos em 2021 em Porto Alegre/RS e atualmente estamos presente em cinco estados e no Distrito Federal. Através de ações de solidariedade garantimos dignidade menstrual para milhares de pessoas que menstruam. Lutamos também por Políticas Públicas eficientes que garantam vida digna para todas brasileiras. Faça parte dessa história, se torne uma Voluntária!',
                                   style: GoogleFonts.nunito(
@@ -409,7 +361,7 @@ class _MyAppState extends State<MyApp> {
                                 ),
                               ),
                               SizedBox(
-                          height: 5.5.h,
+                                height: 5.5.h,
                               ),
                             ],
                           ),
@@ -732,24 +684,6 @@ class _MyAppState extends State<MyApp> {
                     Positioned(
                       bottom: 0.0,
                       child: Footer(),
-                    ),
-                    Align(
-                      alignment: Alignment(1.18, 0.0),
-                      child: Container(
-                        height: 200.0,
-                        width: 200.0,
-                        decoration: BoxDecoration(
-                          color: Colors.brown[400],
-                          borderRadius: BorderRadius.circular(100.0),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black12,
-                              blurRadius: 10.0,
-                              offset: Offset(0.0, 5.0),
-                            ),
-                          ],
-                        ),
-                      ),
                     ),
                   ],
                 ),

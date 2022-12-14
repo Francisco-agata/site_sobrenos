@@ -63,6 +63,7 @@ flutter:
     - lib/assets/images/direitoMenstruar.jpg
     - lib/assets/images/banner.png
     - lib/assets/images/logo.png
+    - lib/assets/images/landingbackground.png
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

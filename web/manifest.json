@@ -1,6 +1,6 @@
 {
-    "name": "freelancer_website_youtube",
-    "short_name": "freelancer_website_youtube",
+    "name": "Sobre Nós",
+    "short_name": "Sobre Nós",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
